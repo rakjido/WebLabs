@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+	<style type="text/css">
+		/* 가상 클래스 선택자 : link, visited 의미론적으로 존재 */
+ 		a:link {
+		  color: green;
+		  background-color: transparent;
+		  text-decoration: none;
+		}
+		a:visited {
+		  color: pink;
+		  background-color: transparent;
+		  text-decoration: none;
+		}
+		a:hover {
+		  color: red;
+		  background-color: transparent;
+		  text-decoration: underline;
+		}
+		a:active {
+		  color: yellow;
+		  background-color: transparent;
+		  text-decoration: underline;
+		}
+	
+		h3 {color:red}
+		/* 
+		CSS는 기본 존재하는 태그에만 적용가능합니까? : 아니오
+		p {}
+		h3 {}
+		: CSS에서는 태그들을 selector(선택자) 기존있는 태그
+		*선택자(selector) 개발자가 정의해서 사용가능
+		
+		.class (.선택자) .A >> class="A"
+		#id    (#선택자) #B >> id=B
+		
+		*/
+		
+		#jic{ color:blue}
+		.hong{ color:green}
+		
+		/* 다중 선택자 */
+		h1, h2, p {text-align: center; color=blue}
+   </style>
+</head>
+<body>
+	<a href="http://www.lg.co.kr"> LG 사이트 </a>
+	
+	<h3> 자동 css적용</h3>
+	<p id="jic"> id 속성 적용 CSS</p>
+	<p class="hong"> class 속성 적용 CSS</p>
+	
+	<!-- 
+		CSS 사용자 정의 : id, class 사용
+		CSS, Javascript, Jquery 모두 사용
+		
+		CSS문법
+		selector 정의
+		1. The element selector(일반 HTML태그) >> p, h3
+		2. The id selector (#이름 >> id="이름")
+		3. The class selector (.이름 >> class="이름")
+		4. grouping selector (p, h1, h2, h3 {}) 다중 선택자
+		 
+	 -->
+	
+</body>
+</html>
