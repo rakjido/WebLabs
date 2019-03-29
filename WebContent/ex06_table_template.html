@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>테이블 만들기</title>
+	<style type="text/css">
+	
+	table, th, td {
+	  border: 1px solid black;
+	  border-collapse: collapse;
+	}
+	th, td {
+	  padding: 15px;
+	  text-align: left;
+	}
+	table#t01 {
+	  width: 100%;    
+	  background-color: #f1f1c1;
+	}
+	
+	table#t01 th {
+	  background-color: black;
+	  color: white;
+	}
+	</style>
+</head>
+<body>
+	<h3>일반테이블</h3>
+	<table>
+		<tr>
+			<td>가</td><td>나</td><td>다</td>
+		</tr>
+		<tr>
+			<td>라</td><td>마</td><td>바</td>
+		</tr>
+		<tr>
+			<td>사</td><td>아</td><td>자</td>
+		</tr>
+		
+	</table>
+	
+	<h3>일반테이블2</h3>
+	<!-- px는 고정, %는 비율 -->
+	<table border="1" style="height: 100px; width: 500px">
+		<tr>
+			<th>제목</th><th>내용</th>
+		</tr>
+		<tr>
+			<td>안녕</td><td>방가방가</td>
+		</tr>
+	</table>
+
+	<h3>일반테이블3</h3>
+	<!-- px는 고정, %는 비율 -->
+	<table border="1" style="height: 100px; width: 100%">
+		<tr>
+			<th>제목</th><th>내용</th>
+		</tr>
+		<tr>
+			<td>안녕</td><td>방가방가</td>
+		</tr>
+	</table>
+
+	<h3>테이블 병합하기</h3>
+	<table border="1" style="height: 100px; width: 500px">
+		<tr>
+			<td colspan="2">가, 나</td><td>다</td>
+		</tr>
+		<tr>
+			<td>라</td><td>마</td><td>바</td>
+		</tr>
+		<tr>
+			<td colspan="3">사</td>
+		</tr>
+		
+	</table>
+
+	<h3>테이블 병합하기</h3>
+	<table border="1" style="height: 100px; width: 500px">
+		<tr>
+			<td rowspan="2">가, 라</td><td colspan="2" rowspan="2">나,다,마,바</td>
+		</tr>
+		<tr>
+			
+		</tr>
+		<tr>
+			<td>사</td><td>아</td><td>자</td>
+		</tr>
+		
+	</table>
+	
+	<table id="t01">
+		  <tr>
+		    <th>Firstname</th>
+		    <th>Lastname</th> 
+		    <th>Age</th>
+		  </tr>
+		  <tr>
+		    <td>Jill</td>
+		    <td>Smith</td>
+		    <td>50</td>
+		  </tr>
+		  <tr>
+		    <td>Eve</td>
+		    <td>Jackson</td>
+		    <td>94</td>
+		  </tr>
+		  <tr>
+		    <td>John</td>
+		    <td>Doe</td>
+		    <td>80</td>
+		  </tr>
+	</table>
+	
+</body>
+</html>
